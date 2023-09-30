@@ -5,6 +5,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <link href="https://fonts.cdnfonts.com/css/iciel-gotham" rel="stylesheet"></link>
     <App />
   </React.StrictMode>,
 )
