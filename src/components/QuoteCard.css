@@ -25,11 +25,12 @@
 
 .quoteCard__phrase {
   margin: 30px auto;
-  max-width: 350px;
-  max-height: 570px;
+  height: 200px;
   width: 350px;
   padding: 80px 20px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 8px;
   border: 1px solid #4791ff;
@@ -48,3 +49,12 @@
   font-size: small;
 }
 
+@media (max-width: 380px) {
+  .quoteCard__phrase {
+    max-width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+}
