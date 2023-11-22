@@ -23,6 +23,11 @@
   color: #803300;
 }
 
+.quoteCard__btn:hover {
+  background-color: #f4b65e;
+  cursor: pointer;
+}
+
 .quoteCard__phrase {
   margin: 30px auto;
   height: 200px;
