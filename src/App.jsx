@@ -1,25 +1,21 @@
 import { useState } from "react";
 import "./App.css";
-import famousPhrases from "./db/famousPhrases.json";
-import { getRandomElement } from "./utils/random";
-import QuoteCard from "./components/QuoteCard";
+import phrases  from "./utils/phrases.json"
+import { getRandomElement } from "./services/random";
+import RandomPhrase from "./components/RandomPhrase";
 
 const backgrounds = ["bg1", "bg2", "bg3", "bg4"];
 
 function App() {
-  const [quote, setQuote] = useState(getRandomElement(famousPhrases));
-  const [currentBg, setCurrentBg] = useState(getRandomElement(backgrounds));
 
-  const handleChangeQuote = () => {
-    setQuote(getRandomElement(famousPhrases));
-    setCurrentBg(getRandomElement(backgrounds))
-  }
+  const [quote, setQuote] = useState(getRandomElement(phrases));
+  const [currentBg, setCurrentBg] = useState(getRandomElement(backgrounds));
 
   return (
     <main className={`app ${currentBg}`}>
-      <QuoteCard
+      <RandomPhrase
         quote={quote}
-        handleChangeQuote={handleChangeQuote}
+        setQuote={setQuote}
       />
     </main>
   );
