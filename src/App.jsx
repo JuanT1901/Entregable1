@@ -16,6 +16,7 @@ function App() {
       <RandomPhrase
         quote={quote}
         setQuote={setQuote}
+        setCurrentBg={setCurrentBg}
       />
     </main>
   );

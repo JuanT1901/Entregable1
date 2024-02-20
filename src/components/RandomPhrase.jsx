@@ -2,7 +2,7 @@ import ButtonPhrase from "./ButtonPhrase";
 import "./RandomPhrase.css"
 
 
-const RandomPhrase = ({ quote, setQuote }) => {
+const RandomPhrase = ({ quote, setQuote, setCurrentBg }) => {
 
   const { author, phrase} = quote;
 
@@ -14,6 +14,7 @@ const RandomPhrase = ({ quote, setQuote }) => {
         
         <ButtonPhrase 
           setQuote={setQuote}
+          setCurrentBg={setCurrentBg}
         />
         
         <p className="quoteCard__phrase">{phrase}</p>
